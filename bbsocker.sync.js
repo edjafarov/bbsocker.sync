@@ -19,7 +19,7 @@ module.exports = function(bb){
       if(err){
         return data.error(err);
       }
-      data.success(response);
+      data.success && data.success(response);
     });
     
     model.trigger('request', model, bb.socket, options);

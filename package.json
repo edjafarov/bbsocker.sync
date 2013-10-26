@@ -1,0 +1,43 @@
+{
+  "name": "bbsocker.sync",
+  "version": "0.0.0",
+  "description": "",
+  "main": "bbsocker.sync.js",
+  "scripts": {
+    "test": "../compy/bin/compy test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/edjafarov/bbsocker.sync.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/edjafarov/bbsocker.sync/issues"
+  },
+  "compy": {
+    "main": "bbsocker.sync.js",
+    "tests": {
+      "plugins": [
+        "karma-mocha",
+        "karma-phantomjs-launcher",
+        "karma-sinon-chai"
+      ],
+      "frameworks": [
+        "mocha",
+        "sinon-chai"
+      ]
+    },
+    "development": {
+      "edjafarov/backbone": "*",
+      "edjafarov/underscore": "*"
+    }
+  },
+  "dependencies": {
+    "karma-mocha": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma-sinon": "0.0.1",
+    "karma-chai": "0.0.2",
+    "karma-sinon-chai": "~0.1.1"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "name": "bbsocker.sync",
-  "repo": "edjafarov/bbsocker.sync",
-  "description": "backbone sync over engine.io/socker",
-  "version": "0.0.1",
-  "scripts": ["bbscoker.sync.js"],
-  "license": "MIT"
-}
