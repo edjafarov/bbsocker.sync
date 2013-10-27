@@ -1,10 +1,10 @@
 {
   "name": "bbsocker.sync",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "bbsocker.sync.js",
   "scripts": {
-    "test": "../compy/bin/compy test"
+    "test": "./node_modules/compy/bin/compy install edjafarov/backbone; ./node_modules/compy/bin/compy install edjafarov/underscore;./node_modules/compy/bin/compy test"
   },
   "repository": {
     "type": "git",
@@ -31,13 +31,16 @@
     "development": {
       "edjafarov/backbone": "*",
       "edjafarov/underscore": "*"
+    },
+    "dependencies": {
+      "edjafarov/backbone": "*",
+      "edjafarov/underscore": "*"
     }
   },
   "dependencies": {
+    "compy": "latest",
     "karma-mocha": "~0.1.0",
     "karma-phantomjs-launcher": "~0.1.0",
-    "karma-sinon": "0.0.1",
-    "karma-chai": "0.0.2",
     "karma-sinon-chai": "~0.1.1"
   }
 }
