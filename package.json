@@ -1,17 +1,18 @@
 {
   "name": "bbsocker.sync",
   "version": "0.0.2",
-  "description": "",
+  "description": "Backbone sync for socker, engine.io based CRUD for websockets",
   "main": "bbsocker.sync.js",
   "scripts": {
-    "test": "./node_modules/compy/bin/compy install edjafarov/backbone; ./node_modules/compy/bin/compy install edjafarov/underscore;./node_modules/compy/bin/compy test"
+    "test": "./node_modules/compy/bin/compy install --dev; ./node_modules/compy/bin/compy test"
   },
+  "keywords":["CRUD","Backbone","Backbone.sync","websockets","engine.io"],
   "repository": {
     "type": "git",
     "url": "git://github.com/edjafarov/bbsocker.sync.git"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "Eldar Djafarov",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/edjafarov/bbsocker.sync/issues"
   },
@@ -28,13 +29,11 @@
         "sinon-chai"
       ]
     },
-    "development": {
-      "edjafarov/backbone": "*",
+    "dependencies": {
       "edjafarov/underscore": "*"
     },
-    "dependencies": {
-      "edjafarov/backbone": "*",
-      "edjafarov/underscore": "*"
+    "development": {
+      "edjafarov/backbone": "*"
     }
   },
   "dependencies": {

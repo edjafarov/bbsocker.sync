@@ -1,9 +1,0 @@
-{
-  "name": "bbsocker.sync",
-  "version": "0.0.2",
-  "description": "",
-  "author":"Eldar Djafarov",
-  "main": "bbsocker.sync.js",
-  "scripts":["bbsocker.sync.js"]
-}
-
