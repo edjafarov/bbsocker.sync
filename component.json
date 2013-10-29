@@ -1,0 +1,26 @@
+{
+  "name": "bbsocker.sync",
+  "main": "bbsocker.sync.js",
+  "author": "Eldar Djafarov",
+  "description": "Backbone sync for socker, engine.io based CRUD for websockets",
+  "dependencies": {
+    "edjafarov/underscore": "*"
+  },
+  "development": {
+    "edjafarov/backbone": "*"
+  },
+  "version": "0.0.3",
+  "license": "MIT",
+  "scripts": [
+    "_pub/bbsocker.sync.js",
+    "bbsocker.sync.js"
+  ],
+  "keywords": [
+    "CRUD",
+    "Backbone",
+    "Backbone.sync",
+    "websockets",
+    "engine.io"
+  ],
+  "repo": "edjafarov/bbsocker.sync"
+}
