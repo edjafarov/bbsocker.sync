@@ -1,6 +1,6 @@
 {
   "name": "bbsocker.sync",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Backbone sync for socker, engine.io based CRUD for websockets",
   "main": "bbsocker.sync.js",
   "scripts": {
