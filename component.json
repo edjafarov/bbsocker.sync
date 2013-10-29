@@ -9,9 +9,11 @@
   "development": {
     "edjafarov/backbone": "*"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "scripts": [
+    "_pub/_pub/bbsocker.sync.js",
+    "_pub/bbsocker.sync.js",
     "bbsocker.sync.js"
   ],
   "keywords": [
