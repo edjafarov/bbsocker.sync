@@ -9,13 +9,22 @@ module.exports = function(bb){
     if(!options.url){
       params.url = _.result(model, 'url');
     }
-
-    if (options.data == null && model && (method === 'create' || method === 'update' || method === 'patch')) {
-      params.data = JSON.stringify(options.attrs || model.toJSON(options));
-    }
+    
     var data = _.extend(params, options);
     
-    bb.socket.serve(data.type + " " + data.url, function(err, response){
+    if (options.data == null && model && (method === 'create' || method === 'update' || method === 'patch')) {
+      var modelData = options.attrs || model;
+      return bb.socket.serve(data.type + " " + data.url, modelData, function(err, response){
+        if(err){
+          return data.error(err);
+        }
+        data.success && data.success(response);
+      });
+    }
+    
+    
+    
+    bb.socket.serve(data.type + " " + data.url,  function(err, response){
       if(err){
         return data.error(err);
       }
