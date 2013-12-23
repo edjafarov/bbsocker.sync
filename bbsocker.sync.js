@@ -23,7 +23,7 @@ module.exports = function(bb){
     }
     
     if(options.attrs){
-      bb.socket.serve(data.type + " " + data.url, options.attrs, function(err, response){
+      return bb.socket.serve(data.type + " " + data.url, options.attrs, function(err, response){
         if(err){
           return data.error(err);
         }
